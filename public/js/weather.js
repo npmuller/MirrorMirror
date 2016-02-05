@@ -1,8 +1,8 @@
         // Docs at http://simpleweatherjs.com
         $(document).ready(function() {
           $.simpleWeather({
-            location: 'Philadephia, PA',
-            woeid: '',
+            location: '',
+            woeid: '12770723',
             unit: 'f',
             success: function(weather) {
                 var skycons = new Skycons({"color": "white"});
