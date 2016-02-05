@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/weather.css">
+        <link rel="stylesheet" href="css/endlessRiver.css">
         <!-- Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -17,6 +18,9 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>
         <script src="/js/skycons.js"></script>
         <script src="/js/vendor/moment.js"></script>
+        <script src="/js/lib/jquery.bingsearch/jquery.bingsearch.js"></script>
+        <script src="/js/lib/jquery-base64/jquery.base64.min.js"></script>
+        <script src="/js/lib/endlessRiver.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     </head>
     <body>
@@ -31,8 +35,10 @@
         <p id="greeting">
             {{ $greeting }}
         </p>
+        <ul id="newsTicker"></ul>
         <script type="text/javascript" src="/js/clock.js"></script>
         <script type="text/javascript" src="/js/weather.js"></script>
+        <script type="text/javascript" src="/js/news.js"></script>
         <script type="text/javascript">
             var gitHash = {{ trim(`git rev-parse HEAD`) }};
                (function checkVersion()
